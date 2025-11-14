@@ -1,13 +1,9 @@
 from google import genai
 from google.genai import types
 import streamlit as st
-import os
 
 def get_genai_client():
-    try:
-        api_key = st.secrets["google"]["api_key"]
-    except (KeyError, FileNotFoundError):
-        api_key = os.getenv("GOOGLE_API_KEY")
+    api_key = st.secrets["google"]["api_key"]
     
     if not api_key:
         raise ValueError(
