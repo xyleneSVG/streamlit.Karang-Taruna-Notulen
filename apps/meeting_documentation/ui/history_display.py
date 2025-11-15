@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-def display_meeting_history(worksheet):
-    st.divider()
-    st.subheader("📚 Riwayat Notulen Rapat")
-    
+def display_meeting_history(worksheet):    
     data = worksheet.get_all_records()
     df = pd.DataFrame(data)
     

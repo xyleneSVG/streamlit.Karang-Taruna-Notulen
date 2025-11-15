@@ -49,6 +49,7 @@ def run():
                         status.empty()
 
                         st.success("✅ Semua foto berhasil diupload!")
+                        st.balloons()
                         st.write("📂 Folder Dokumentasi Google Drive:")
                         st.write(link)
 

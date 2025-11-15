@@ -4,8 +4,6 @@ from ..config import GAS_WEBAPP_URL
 from ..utils.parse_folder import parse_folder_name
 
 def show_gallery():
-    st.subheader("📸 Dokumentasi Kegiatan")
-
     service = GalleryService(GAS_WEBAPP_URL)
 
     try:

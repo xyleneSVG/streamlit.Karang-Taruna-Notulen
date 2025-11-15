@@ -1,7 +1,7 @@
 import streamlit as st
 
 def login_form():
-    st.title("🔐 Login Karang Taruna")
+    st.title("🔐 Login Admin")
 
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
