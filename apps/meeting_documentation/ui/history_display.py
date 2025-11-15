@@ -31,7 +31,6 @@ def display_meeting_history(worksheet):
                     continue
 
                 if files_data["status"] != "success" or files_data["count"] == 0:
-                    st.warning("Tidak ada foto di folder ini.")
                     continue
 
                 st.markdown("**📸 Dokumentasi Foto:**")
